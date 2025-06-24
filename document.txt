@@ -1,0 +1,15 @@
+The Financial News Impact Analyzer is an agentic system designed to convert unstructured financial news into 
+structured, expert-level insights for analysts and investors. The system leverages Tavly as a research tool to
+ collect up-to-date contextual information from the internet, enhancing the reliability of downstream analysis. 
+ The architecture consists of three sequential agents: Impact_Prediction_Agent, Market_Context_Agent, and Financial_Research_Expert. 
+ The user provides a raw financial news article as input. This input is first enriched via Tavly and 
+ then passed to the Impact_Prediction_Agent, which analyzes the core entity, event type, sentiment, 
+ predicted short-term market direction (upward/downward/neutral), volatility level, risk factors, and assigns a confidence score. 
+ The structured output is then routed to the Market_Context_Agent, which acts like a market strategist and provides a detailed commentary based 
+ on real-time sector trends, peer movements, macroeconomic conditions, and geopolitical factors. The context-aware commentary is then forwarded 
+ to the final agent, Financial_Research_Expert, which synthesizes all insights into a concise, professional-grade summary. This final report 
+ mimics the tone and structure of a financial analyst's memo or research note and provides strategic insight for investment decisions. 
+ The system concludes by saving the expert summary into a .txt file for review or further integration. Overall, the Financial News 
+ Impact Analyzer demonstrates how agent-based automation can bring together news interpretation, market intelligence, and financial 
+ research into a single streamlined pipeline.
+
